@@ -1,0 +1,122 @@
+html, body {
+  font-family: Verdana, Arial, sans-serif;
+  height: 100%;
+  margin: 5px 0px 0px 0px;
+  padding: 0px;
+}
+
+/* Link styling */
+a {
+  color: #2d56d2; /* A type of blue */
+  text-decoration: none;
+}
+  a:visited {
+	  color: #2d56d2; /* A type of blue */
+  }
+  a:hover {
+	  color: #2d56d2; /* A type of blue */
+	  text-decoration: underline;
+  }
+
+/* General div styles */
+.main {
+  width: 45%;
+  min-width: 700px;
+  max-width: 1100px;
+  min-height: 100%; /* This forces the container to extend till the bottom of page */
+  margin: 0px auto; /* Centers the container */
+  padding: 10px 30px 10px 30px;
+  border-bottom: 0px;
+}
+  .general {
+    clear: both;
+    width: 100%;
+    font-size: 14pt;
+    padding-top: 20px;
+    /*text-align: justify;*/
+  }
+    .general ul {
+      text-align: left;
+    }
+    .general li {
+      margin-top: 5px;
+    }
+  .contact {
+    margin-top: 30px;
+    /*margin-left: 40px;*/
+    /* float: left; */
+    width: 100%;
+    font-size: 14pt;
+  }
+    .contact img {
+      width: 100%;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    .contact h3, h4 {
+      margin-bottom: 6px;
+      margin-top: 6px;
+    }
+  .contact-image {
+    float: left;
+    width: 25%;
+  }
+  .contact-info {
+    float: right;
+    width: 70%;
+  }
+  .publications {
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    clear: both;
+    font-size: 14pt;
+  }
+    .publications li {
+      padding-bottom: 2px;
+    }
+  
+  .links {
+    display: inline-block;
+    font-weight: bold;
+  }
+    .links a {
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+    .links:before {
+      content: "[";
+    }
+    .links:after {
+      content: "]";
+    }
+            
+  .bottom {
+    font-size: 12pt;
+  }
+ 
+/* To get ordered lists share the same ordering */
+/* http://stackoverflow.com/questions/4615500/how-to-start-a-new-list-continuing-the-numbering-from-the-previous-list */
+ol.start { 
+  counter-reset: mycounter; 
+}
+  ol.start li, ol.continue li {
+    list-style: none;
+    display: table;
+    margin-top: 2px;
+  }
+  ol.start li:before, ol.continue li:before { 
+    content: counter(mycounter) ".\00a0\00a0 ";
+    counter-increment: mycounter;
+    display: table-cell;
+  }
+
+ul li {
+  list-style: none;
+  display: table;
+  margin-top: 2px;
+}
+
+ul li:before {
+    content: "\25AC\00a0\00a0 ";
+    display: table-cell;
+}
