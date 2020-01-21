@@ -7,21 +7,21 @@ html, body {
 
 /* Link styling */
 a {
-  color: #2d56d2; /* A type of blue */
+  color: #4478c7; /* A type of blue */
   text-decoration: none;
 }
   a:visited {
-	  color: #2d56d2; /* A type of blue */
+	  color: #4478c7; /* A type of blue */
   }
   a:hover {
-	  color: #2d56d2; /* A type of blue */
+	  color: #4478c7; /* A type of blue */
 	  text-decoration: underline;
   }
 
 /* General div styles */
 .main {
   width: 45%;
-  min-width: 700px;
+  min-width: 600px;
   max-width: 1100px;
   min-height: 100%; /* This forces the container to extend till the bottom of page */
   margin: 0px auto; /* Centers the container */
@@ -60,6 +60,7 @@ a {
   .contact-image {
     float: left;
     width: 25%;
+    min-width: 150px;
   }
   .contact-info {
     float: right;
@@ -91,7 +92,8 @@ a {
     }
             
   .bottom {
-    font-size: 12pt;
+    font-size: 14pt;
+    padding-bottom: 40px;
   }
  
 /* To get ordered lists share the same ordering */
