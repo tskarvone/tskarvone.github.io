@@ -1,8 +1,11 @@
 html, body {
-  font-family: Verdana, Arial, sans-serif;
+  /* font-family: Verdana, Arial, sans-serif; */
+  font-family: cambria, georgia, serif;
+  font-size: 16pt;
   height: 100%;
   margin: 5px 0px 0px 0px;
   padding: 0px;
+  background-color: f9f4ee;
 }
 
 /* Link styling */
@@ -20,57 +23,26 @@ a {
 
 /* General div styles */
 .main {
-  width: 45%;
+  width: 90%;
   min-width: 600px;
   max-width: 1100px;
   min-height: 100%; /* This forces the container to extend till the bottom of page */
-  margin: 0px auto; /* Centers the container */
+  /* margin: 0px auto; */ /* Centers the container */
   padding: 10px 30px 10px 30px;
   border-bottom: 0px;
+  text-align: justify;
 }
-  .general {
-    clear: both;
-    width: 100%;
-    font-size: 14pt;
-    padding-top: 20px;
-    /*text-align: justify;*/
+
+  .aboutme {
+      width: 70%;
+      min-width: 
   }
-    .general ul {
-      text-align: left;
-    }
-    .general li {
-      margin-top: 5px;
-    }
-  .contact {
-    margin-top: 30px;
-    /*margin-left: 40px;*/
-    /* float: left; */
-    width: 100%;
-    font-size: 14pt;
-  }
-    .contact img {
-      width: 100%;
-      margin-top: 20px;
-      border-radius: 8px;
-    }
-    .contact h3, h4 {
-      margin-bottom: 6px;
-      margin-top: 6px;
-    }
-  .contact-image {
-    float: left;
-    width: 25%;
-    min-width: 150px;
-  }
-  .contact-info {
-    float: right;
-    width: 70%;
-  }
+
   .publications {
-    padding: 10px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
     width: 100%;
     clear: both;
-    font-size: 14pt;
+    text-align: left;
   }
     .publications li {
       padding-bottom: 2px;
@@ -90,12 +62,7 @@ a {
     .links:after {
       content: "]";
     }
-            
-  .bottom {
-    font-size: 14pt;
-    padding-bottom: 40px;
-  }
- 
+
 /* To get ordered lists share the same ordering */
 /* http://stackoverflow.com/questions/4615500/how-to-start-a-new-list-continuing-the-numbering-from-the-previous-list */
 ol.start { 
@@ -112,13 +79,23 @@ ol.start {
     display: table-cell;
   }
 
-ul li {
-  list-style: none;
-  display: table;
-  margin-top: 2px;
+#AboutMeDiv {
+    margin-right: 230px;
 }
 
-ul li:before {
-    content: "\25AC\00a0\00a0 ";
-    display: table-cell;
+#ImageDiv {
+    width: 230px; float: right;
+}
+
+@media (max-width: 900px) {
+  div#ImageDiv {
+      display: none;
+      width: 0%;
+  }
+}
+
+@media (max-width: 900px) {
+  div#AboutMeDiv {
+      width: 100%;
+  }
 }
