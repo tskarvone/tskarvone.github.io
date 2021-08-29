@@ -28,7 +28,7 @@ a {
   max-width: 1100px;
   min-height: 100%; /* This forces the container to extend till the bottom of page */
   /* margin: 0px auto; */ /* Centers the container */
-  padding: 10px 30px 10px 30px;
+  padding: 0px 30px 10px 10%;
   border-bottom: 0px;
   text-align: justify;
 }
@@ -97,5 +97,11 @@ ol.start {
 @media (max-width: 900px) {
   div#AboutMeDiv {
       width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  div.main {
+      padding: 0px 30px 10px 30px;
   }
 }
