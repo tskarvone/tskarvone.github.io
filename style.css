@@ -37,6 +37,11 @@ a {
       width: 70%;
       min-width: 
   }
+  
+  .contact {
+      width: 33%;
+      float: left
+  }
 
   .publications {
     padding: 0px 0px 0px 0px;
@@ -97,6 +102,13 @@ ol.start {
 @media (max-width: 900px) {
   div#AboutMeDiv {
       width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  div.contact {
+      width: 100%;
+      padding-bottom: 15px
   }
 }
 
