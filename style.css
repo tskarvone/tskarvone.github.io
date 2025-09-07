@@ -2,10 +2,11 @@ html, body {
   /* font-family: Verdana, Arial, sans-serif; */
   /* font-family: cambria, georgia, serif; */
   font-family: arial;
-  font-size: 15pt;
+  font-size: 14pt;
   height: 100%;
   margin: 5px 0px 0px 0px;
-  padding: 0px;
+  padding: 5px;
+  line-height: 1.3;
   /* background-color: f9f4ee; */
 }
 
@@ -72,7 +73,11 @@ a {
 ul.major-list li:not(:last-child) {
    margin-bottom: 8px;
 }
-    
+
+ul.spacedul li {
+  margin: 15px 0;
+}
+
 /* To get ordered lists share the same ordering */
 /* http://stackoverflow.com/questions/4615500/how-to-start-a-new-list-continuing-the-numbering-from-the-previous-list */
 ol.start { 
