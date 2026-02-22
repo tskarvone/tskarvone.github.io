@@ -46,6 +46,19 @@
 
  <footer>
   <p>Toni Karvonen &mdash; toni.karvonen@lut.fi</p>  
+  <p>
+    <script>
+	    var date = new Date(document.lastModified);
+	    var month = date.toLocaleString('default', { month: 'long' });
+	    document.write("Updated on ");
+	    document.write(date.getUTCDate());
+	    document.write(" ");
+	    document.write(month);
+	    document.write(" ");
+	    document.write(date.getFullYear());
+	    document.write(".");
+	  </script>
+  </p>
 </footer> 
 
 </body>
