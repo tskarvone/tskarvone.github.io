@@ -5,7 +5,7 @@ ol {
 }
 
 li:before {
-  content: "Week " counter(elementcounter) ":   ";
+  content: "Viikko / Week " counter(elementcounter) ":   ";
   counter-increment: elementcounter;
   font-weight: bold;
 }
